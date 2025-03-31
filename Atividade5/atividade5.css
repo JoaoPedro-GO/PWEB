@@ -1,0 +1,91 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+@media (max-width: 420px) {
+    .container {
+        background-color: gray;
+    }
+    .container h2::before {
+        content: 'Cinza';
+        color: white;
+    }
+}
+
+@media (min-width: 421px) and (max-width: 768px) {
+    .container {
+        background-color: orange;
+    }
+    .container h2::before {
+        content: 'Laranja';
+        color: white;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        background-color: pink;
+    }
+    .container h2::before {
+        content: 'Rosa';
+        color: white;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1080px) {
+    .container {
+        background-color: red;
+    }
+    .container h2::before {
+        content: 'Vermelho';
+        color: white;
+    }
+}
+
+@media (min-width: 1081px) and (max-width: 1366px) {
+    .container {
+        background-color: purple;
+    }
+    .container h2::before {
+        content: 'Roxo';
+        color: white;
+    }
+}
+
+@media (min-width: 1367px) and (max-width: 1920px) {
+    .container {
+        background-color: yellow;
+    }
+    .container h2::before {
+        content: 'Amarelo';
+        color: black;
+    }
+}
+
+@media (min-width: 1921px) {
+    .container {
+        background-color: green;
+    }
+    .container h2::before {
+        content: 'Verde';
+        color: white;
+    }
+}
