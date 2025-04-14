@@ -49,7 +49,7 @@ function calcularIMC(peso, altura) {
       
       const { classificacao, grau } = obterClassificacao(imc);
   
-      // Exibindo os resultados
+      
       document.getElementById('imc').innerText = `IMC: ${imc.toFixed(2)}`;
       document.getElementById('classificacao').innerText = `Classificação: ${classificacao}`;
       document.getElementById('grau').innerText = `Grau de obesidade: ${grau}`;
