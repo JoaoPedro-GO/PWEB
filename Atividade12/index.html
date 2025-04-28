@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade de Função Construtora e Herança</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>1. Função Construtora - Retângulo</h2>
+
+<p>Digite a base e a altura do retângulo:</p>
+<input type="number" id="base" placeholder="Base" />
+<input type="number" id="altura" placeholder="Altura" />
+<button onclick="calcularAreaRetangulo()">Calcular Área</button>
+
+<p id="resultadoRetangulo"></p>
+
+<hr>
+
+<h2>2. Classe Conta e Herança</h2>
+
+<p>Digite os dados da conta corrente:</p>
+<input type="text" id="nomeCorrente" placeholder="Nome do correntista" />
+<input type="text" id="bancoCorrente" placeholder="Nome do banco" />
+<input type="number" id="numeroContaCorrente" placeholder="Número da conta" />
+<input type="number" id="saldoCorrente" placeholder="Saldo" />
+<button onclick="criarContaCorrente()">Criar Conta Corrente</button>
+
+<p id="dadosContaCorrente"></p>
+
+<hr>
+
+<p>Digite os dados da conta poupança:</p>
+<input type="text" id="nomePoupanca" placeholder="Nome do correntista" />
+<input type="text" id="bancoPoupanca" placeholder="Nome do banco" />
+<input type="number" id="numeroContaPoupanca" placeholder="Número da conta" />
+<input type="number" id="saldoPoupanca" placeholder="Saldo" />
+<input type="number" id="jurosPoupanca" placeholder="Juros (%)" />
+<input type="text" id="dataVencimentoPoupanca" placeholder="Data de vencimento (ex: dd/mm/aaaa)" />
+<button onclick="criarContaPoupanca()">Criar Conta Poupança</button>
+
+<p id="dadosContaPoupanca"></p>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
